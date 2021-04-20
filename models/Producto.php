@@ -33,9 +33,9 @@
         public function insert_producto($prod_nom){
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "INSERT INTO tm_productos (prod_nom,fech_crea,est) VALUES (?,now(),1)";
+            $sql = "INSERT INTO tm_producto (prod_nom,fech_crea,est) VALUES (?,now(),1)";
             $sql= $conectar->prepare($sql);
-            $sql->bindValue(1,$prod_id);
+            $sql->bindValue(1,$prod_nom);
             $sql->execute();
             return $resultado = $sql->fetchAll();
         }

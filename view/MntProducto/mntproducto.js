@@ -1,10 +1,10 @@
 var tabla;
-/*
+
 function init(){
     $("#producto_form").on("submit",function(e){
         guardaryeditar(e);	
     });
-}*/
+}
 
 $(document).ready(function(){ 
     tabla=$('#producto_data').dataTable({
@@ -56,7 +56,7 @@ $(document).ready(function(){
 		}
 	}).DataTable();
 });
-/*
+
 function guardaryeditar(e){
     e.preventDefault();
     var formData = new FormData($("#producto_form")[0]);
@@ -79,12 +79,12 @@ function guardaryeditar(e){
             )
         }
     });
-}*/
-/*
+}
+
 function editar(prod_id){
     console.log(prod_id);
-}*/
-/*
+}
+
 function eliminar(prod_id){
     swal.fire({
         title: 'CRUD',
@@ -115,6 +115,6 @@ function eliminar(prod_id){
 $(document).on("click","#btnnuevo", function(){
     $('#mdltitulo').html('Nuevo Registro');
     $('#modalmantenimiento').modal('show');
-});*/
+});
 
-//init();
+init();

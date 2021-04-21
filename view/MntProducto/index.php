@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mantenimiento de producto</title>
-        <link href="../../public/css/styles.css" rel="stylesheet" />
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-
-        <link href="../../public/datatables/jquery.dataTables.css" rel="stylesheet">
-    <link href="../../public/datatables/buttons.dataTables.min.css" rel="stylesheet"/>
+        <?php require_once("../../mainhead.php");?>
+    <title>Mantenimiento de producto</title>
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -97,6 +87,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Nombre</th>
+                                                <th>Descripcion</th>
                                                 <th></th>
                                                 <th></th>
                                             </tr>
@@ -124,16 +115,8 @@
         </div>
 
         <?php require_once("modalmantenimiento.php"); ?>
-        <script src="../../public/js/jquery.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="../../public/js/scripts.js"></script>
-        <script src="../../public/datatables/jquery.dataTables.js"></script>
-    <script src="../../public/datatables-responsive/dataTables.responsive.js"></script>
-        <script src="../../public/datatables/dataTables.buttons.min.js"></script>
-    <script src="../../public/datatables/buttons.html5.min.js"></script>
-    <script src="../../public/datatables/buttons.colVis.min.js"></script>
-    <script src="../../public/datatables/jszip.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <?php require_once("../../mainjs.php"); ?>
+
     <script type="text/javascript" src="mntproducto.js"></script>
     
     </body>
